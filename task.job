@@ -1,0 +1,7 @@
+#PBS -N nekochan
+#PBS -q release
+#PBS -l nodes=8:ppn=8
+#PBS -j oe
+
+cd $PBS_O_WORKDIR
+mpiexec ./bcast_eval
